@@ -4,7 +4,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="/assets/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/assets/logo.png" type="image/x-icon" />
     <title>NACOS Week 25 - Quiz</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -24,7 +24,7 @@
     <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Sour+Gummy:wght@100..900&display=swap");
-      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100..900&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
       body {
         font-family: "Poppins", sans-serif;
@@ -37,7 +37,10 @@
   </head>
   <body class="bg-gray-900 text-white">
     <!-- Number Selection Page -->
-    <div id="number-selection" class="relative flex flex-col items-center justify-center min-h-screen">
+    <div
+      id="number-selection"
+      class="relative flex flex-col items-center justify-center min-h-screen"
+    >
       <div class="relative z-10 text-center">
         <div class="featured flex items-center gap-4">
           <img class="w-12" src="/assets/logo.png" alt="" />
@@ -49,7 +52,10 @@
     </div>
 
     <!-- Quiz Page -->
-    <div id="quiz-page" class="hidden relative flex flex-col items-center justify-center min-h-screen">
+    <div
+      id="quiz-page"
+      class="hidden relative flex flex-col items-center justify-center min-h-screen"
+    >
       <div class="featured flex items-center gap-4">
         <img class="w-12" src="/assets/logo.png" alt="" />
         <h1 class="text-4xl font-extrabold text-primary">NACOS Week 25</h1>
@@ -60,7 +66,10 @@
         <div id="quiz-options" class="mt-6"></div>
         <p id="result" class="mt-4 text-lg font-bold"></p>
         <div class="text-center">
-          <button id="next-btn" class="mt-6 px-6 py-2 border border-2 border-green-500 text-green-500 rounded-full hover:bg-green-900">
+          <button
+            id="next-btn"
+            class="mt-6 px-6 py-2 border border-2 border-green-500 text-green-500 rounded-full hover:bg-green-900"
+          >
             Next Question
           </button>
         </div>
@@ -68,12 +77,26 @@
     </div>
 
     <!-- Popup for Completion Message -->
-    <div id="popup" class="hidden fixed inset-0 flex items-center justify-center bg-black bg-opacity-60 z-50">
-      <div class="bg-white text-gray-900 p-6 rounded-lg shadow-lg text-center max-w-xs relative">
-        <img src="https://cdn-icons-png.flaticon.com/512/845/845646.png" class="w-20 mx-auto" alt="Success Icon" />
+    <div
+      id="popup"
+      class="hidden fixed inset-0 flex items-center justify-center bg-black bg-opacity-60 z-50"
+    >
+      <div
+        class="bg-white text-gray-900 p-6 rounded-lg shadow-lg text-center max-w-xs relative"
+      >
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/845/845646.png"
+          class="w-20 mx-auto"
+          alt="Success Icon"
+        />
         <h2 class="text-2xl font-bold mt-4">Well done!</h2>
-        <p class="text-sm mt-2">You have answered all 10 questions. Well done!</p>
-        <button onclick="window.location.reload()" class="mt-4 px-6 py-2 bg-green-500 text-white rounded-full hover:bg-green-700">
+        <p class="text-sm mt-2">
+          You have answered all 10 questions. Well done!
+        </p>
+        <button
+          onclick="window.location.reload()"
+          class="mt-4 px-6 py-2 bg-green-500 text-white rounded-full hover:bg-green-700"
+        >
           Close
         </button>
       </div>
