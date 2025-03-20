@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const optionLabels = ["A", "B", "C", "D"];
 
     // Create number buttons (1-10)
-    for (let i = 1; i <= 10; i++) {
+    for (let i = 1; i <= 11; i++) {
         const btn = document.createElement("button");
         btn.textContent = i;
         btn.className =
@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
         currentNumber = null;
         quizPageSection.classList.add("hidden");
 
-        if (selectedNumbers.length === 10) {
+        if (selectedNumbers.length === 11) {
             // All questions answered, show popup on next button click.
             popup.classList.remove("hidden");
         } else {
