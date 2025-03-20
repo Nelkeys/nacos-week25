@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   const checkBtn = document.createElement("button");
-  checkBtn.textContent = "Check";
+  checkBtn.textContent = "Reveal Answer";
   checkBtn.className =
     "hidden mt-6 px-6 py-2 border border-2 border-yellow-500 text-yellow-500 rounded-full hover:bg-yellow-900";
   checkBtn.addEventListener("click", function () {
