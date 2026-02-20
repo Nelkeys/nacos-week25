@@ -123,7 +123,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <div class="skeleton h-12 w-full my-2"></div>
         `;
 
-    db.collection("quiz")
+    db.collection("quiz2")
       .doc(String(number))
       .get()
       .then((doc) => {
