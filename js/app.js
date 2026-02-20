@@ -1,12 +1,12 @@
 // Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDB6i-PmXbcvaiUtssqJz7UMN-RUCzSdtk",
-  authDomain: "nacosweek25.firebaseapp.com",
-  projectId: "nacosweek25",
-  storageBucket: "nacosweek25.firebasestorage.app",
-  messagingSenderId: "247236485385",
-  appId: "1:247236485385:web:f287d9a432883ce72173d8",
-};
+    apiKey: "AIzaSyD2wamg6PfAETmforsP3XMlvqfmhwD3oyk",
+    authDomain: "nacosweek26.firebaseapp.com",
+    projectId: "nacosweek26",
+    storageBucket: "nacosweek26.firebasestorage.app",
+    messagingSenderId: "816518095046",
+    appId: "1:816518095046:web:e2d3fe76c5c9c5db3db7c7"
+  };
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
